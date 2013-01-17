@@ -14,3 +14,8 @@ services:
              tags:
                  - { name: sonata.admin, manager_type: orm, group: main, label: Category }
              arguments: [null, MyProject\MainBundle\Entity\Category, MyProjectMainBundle:CategoryAdmin]
+    myproject.mian.admin.order:
+             class: MyProject\MainBundle\Admin\OrderAdmin
+             tags:
+                 - { name: sonata.admin, manager_type: orm, group: main, label: Order }
+             arguments: [null, MyProject\MainBundle\Entity\Order, MyProjectMainBundle:OrderAdmin]

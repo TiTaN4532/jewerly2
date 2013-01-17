@@ -50,6 +50,13 @@ class Products
      * @ORM\Column(name="updated_at", type="integer", nullable=true)
      */
     private $updatedAt;
+    
+     /**
+     * @var integer $articul
+     *
+     * @ORM\Column(name="articul", type="integer", unique=true, nullable=true)
+     */
+    private $articul;
         
      /**
      * @var $images
@@ -220,6 +227,7 @@ class Products
      * Set updatedAt
      *
      * @ORM\PreUpdate()
+     * @ORM\PrePersist()
      */
     public function setUpdatedAt()
     {
@@ -234,6 +242,26 @@ class Products
     public function getUpdatedAt()
     {
         return date("H:i:s Y-m-d",$this->updatedAt);
+    }
+    
+    /**
+     * Set articul
+     *
+     * @param integer $articul
+     */
+    public function setArticul($articul)
+    {
+        $this->articul = $articul;
+    }
+
+    /**
+     * Get articul
+     *
+     * @return integer
+     */
+    public function getArticul()
+    {
+        return $this->articul;
     }
             
     
