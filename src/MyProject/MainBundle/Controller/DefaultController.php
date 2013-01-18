@@ -11,7 +11,7 @@ class DefaultController extends Controller
     public function indexAction()
     {           
         $title='Главная';
-        return $this->render('MyProjectMainBundle::main.html.twig',array('title' => $title,'slug' => ''));
+        return $this->render('MyProjectMainBundle:Default:main.html.twig',array('title' => $title,'slug' => ''));
     }
     
      public function categoryAction($slug = null)
@@ -38,5 +38,10 @@ class DefaultController extends Controller
     public function contactsAction()
     {   
         return $this->render('MyProjectMainBundle:Default:contacts.html.twig',array('slug' => ''));
+    }
+    
+    public function testAction()
+    {   
+        return $this->render('MyProjectMainBundle::layout.html.twig');
     }
 }

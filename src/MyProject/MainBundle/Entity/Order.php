@@ -195,6 +195,7 @@ class Order
      * Set updatedAt
      *
      * @ORM\PreUpdate()
+     * @ORM\PrePersist()
      */
     public function setUpdatedAt()
     {

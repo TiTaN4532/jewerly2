@@ -8,6 +8,12 @@ MyProjectMainBundle_contacts:
 MyProjectMainBundle_order:
     pattern:  /order
     defaults: { _controller: MyProjectMainBundle:Order:index }
+
+MyProjectMainBundle_test:
+    pattern:  /test
+    defaults: { _controller: MyProjectMainBundle:Default:test }
 MyProjectMainBundle_category:
     pattern:  /{slug}
     defaults: { _controller: MyProjectMainBundle:Default:category, slug: null }
+
+

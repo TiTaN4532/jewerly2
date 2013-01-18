@@ -27,13 +27,8 @@ body {
 	padding:0;
 }
 
-.page_margins { width: 1050px;  min-width: 740px; max-width: 90em; /*background: #e7e7e7; */ height: auto !important; margin: 0 auto -46px;}
-	html>body .page_margins {  min-height: 97%;}
-	*:first-child+html .page_margins {min-height: 97%;}
-	.page_margins {min-height /*\**/: 97%\9   /* Sin punto y coma!! */}
-	.page_margins { min-height:97%}
-	html>/**/body .page_margins {min-height: 100%;}
-	*.page_margins {min-height: 97%}
+.page_margins { width: 1050px;  min-width: 740px; /*background: #e7e7e7; */ height: auto !important; margin: 0 auto -46px;}
+
 .page {background-repeat:repeat-x; position:relative;}
 
 #topmenuwrap {
@@ -275,7 +270,7 @@ width:auto;
     
 }
 
-#header { height: 140px; display: block; position: relative; z-index: 1;}
+#header { height: 80px; display: block; position: relative; z-index: 1;}
     #header .above-header { height: 30px; display: block; background-color:#f7f7f7;}
             .above-header .cross-site { width: 1050px;  min-width: 740px; max-width: 90em; margin: 0 auto 0; position: relative; }
     #header .main-block { color: #000;  background-color: #333333; wight: 110px; }
@@ -350,4 +345,79 @@ ul.menu{
     margin: 0 0 0 1em;
 padding: 0 0 0 1em;
 list-style-position: outside;
+}
+ ul.productList  { display: inline-block; padding: 0; margin: 0; }
+                ul.productList li { display: block; width: 230px; float: left; }
+
+                .polaroid{
+                    background: #FFF; 
+                    margin: 0 0 0 0; 
+                    padding: 10px 10px 0 10px; 
+                    width: 200px;
+                    min-height: 200px;
+                }
+
+                .polaroid div a { cursor: pointer; }
+
+                .polaroid img{
+                    width: 200px; 
+ 
+                }
+                .polaroid-caption{
+                    color: #000; 
+                    background: #FFF; 
+                    height: 20px; 
+                    margin: 0 0 10px 0; 
+                    padding: 10px 10px; 
+                    width: 200px;
+                }
+
+                /* Caption and controls */
+                .polaroid-caption a{
+                    color: #000;
+                }
+                .polaroid-caption p.caption{
+                    font-weight: bold; 
+                    text-align: center;
+                }
+                .prev, .next{
+                    display: block; 
+                    height: 22px;
+                    width: 19px;
+                }
+                .prev{
+                    background: url("../../../bundles/myprojectmain/images/ui/vector-arrow-icons.jpg") no-repeat; 
+                    float: left;
+                    background-position: -196px -189px
+                }
+                .next{
+                    background: url("../../../bundles/myprojectmain/images/ui/vector-arrow-icons.jpg") no-repeat; 
+                    float: right;
+                    background-position: -78px -189px;
+                }
+
+                /* css3 */
+                .polaroid{
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    -moz-border-radius-topleft: 10px; 
+                    -moz-border-radius-topright: 10px;
+                    -webkit-border-top-left-radius: 10px;
+                    -webkit-border-top-right-radius: 10px;
+                }
+                .polaroid-caption{
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    -moz-border-radius-bottomleft: 10px; 
+                    -moz-border-radius-bottomright: 10px;
+                    -webkit-border-bottom-left-radius: 10px;
+                    -webkit-border-bottom-right-radius: 10px
+                }
+                
+.active-link { text-decoration:none !important; font-size: 14px !important; color: #999 !important; cursor: default;}
+a {
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
 }
